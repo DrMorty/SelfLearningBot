@@ -1,6 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import apiai, json
-
 
 updater = Updater(token='608604606:AAFvstqF0Lvn4jXbOZG-UnzSmhFyFbXaxkI')
 dispatcher = updater.dispatcher
