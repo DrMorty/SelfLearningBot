@@ -7,9 +7,7 @@ dispatcher = updater.dispatcher
 
 def startCommand(bot, update):
 	bot.send_message(chat_id=update.message.chat_id, text='Привет! Давай общаться')
-def textMessage(bot, update):
-    response = 'Спасибо за ваше сообщение: ' + update.message.text
-    bot.send_message(chat_id=update.message.chat_id, text=response)
+
 def textMessage(bot, update):#посылаем сообщение на серевер Dialogflow
     request = apiai.ApiAI('1cb0776afa8f446bb63bc409262a05c3').text_request()
     request.lang = 'ru' 
